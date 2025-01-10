@@ -1,16 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .myAppBase{
   min-height: 100vh;
   min-height: 100vh;
-  background-color: #282c34;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNYZvUbziDRUMs0PMay9rM7Y_43dD5EvnyQ&s");
+  background-image: url("./Media//Background1.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   /* animation: App-logo-spin infinite 20s ease-in-out; */
 }
 
+.selector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+}
+
+button{
+  border: none;
+  padding: 0.4rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+  background: purple;
+  color: white;
+}
+
+button:hover{
+  background: orange;
+}
 
 
 

@@ -1,0 +1,65 @@
+.heartBase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 1s ease-in-out;
+  animation: heartBeat infinite 10s ease-in-out;
+  text-align:  center;
+  overflow-wrap: break-word;
+}
+
+.hrtTriangle {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  rotate: 45deg;
+  border-radius: 250% 0 0;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 darkred;
+ 
+}
+
+.hrtCircle {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  border-radius: 100%;
+  /* top: 0; */
+  background: red;
+}
+
+.hrtleft {
+  position: absolute;
+  bottom: 0;
+  left: -45px;
+}
+
+.hrtRight {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+}
+
+
+.message{    
+    z-index: 5;
+    color: white;
+    rotate: -45deg;
+    /* text-align: center; */
+}
+
+@keyframes heartBeat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}

@@ -1,14 +1,19 @@
-
-import './App.css';
-import Envolope from './Components/Envolope';
+import { useState } from "react";
+import "./App.css";
+import Envolope from "./Components/Envolope";
 
 function App() {
+  const [lang, setLang] = useState("eng");
+
   return (
-  <>
-  <div className='myAppBase'>
-    <Envolope/>
-  </div>
-  </>
+    <>
+      <div className="myAppBase">
+        <div>
+          
+          <Envolope lang={lang} />
+        </div>
+      </div>
+    </>
   );
 }
 

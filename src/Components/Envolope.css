@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
   min-width: 100vw;
   min-height: 100vh;
@@ -12,20 +13,32 @@
   position: relative;
   width: 30rem;
   height: 18rem;
-  /* overflow: hidden; */
-  /* border-radius: 2rem; */
-  /* background-color: red; */
-  border: 1px solid black;
+  /* overflow:hidden; */
+  border-radius: 1rem;
+  box-shadow:  0 0 10px 0 black, 0 0 15px 0 white;
+  transition: all 2s ease-in-out;
+  background-color:  var(--envolope);
+ 
+}
+
+.heart{
+  position: absolute;
+  bottom: calc(50%, -50%);
+  left: calc(50%, -50%);  
+  animation: animation1 infinite 8s linear;
 }
 
 .topFlap {
+  z-index: 10;
   position: absolute;
   top: 0;
   width: 100%;
   height: 50%;
-  /* background-color: blue; */
-
+  background-color: var(--envolope);
   border-radius: 0 0 150% 150%;
+  transition: all 2s ease-in-out;
+  box-shadow: 0 0 3px white;
+
 }
 
 .openBtn {
@@ -33,7 +46,7 @@
   height: 20px;
   position: absolute;
   bottom: 5%;
-  left: calc(50%);
+  left: calc(47%);
   border-radius: 1rem;
   border: 2px solid white;
   background: black;
@@ -44,7 +57,7 @@
 } */
 
 .leftFlap {
-    z-index: 5;
+    z-index: 6;
     position: absolute;
     top: 0;
     left: 0;
@@ -52,7 +65,18 @@
     height: 0;
     border-top: 9rem solid transparent;
     border-bottom: 9rem solid transparent;
-    border-left: 14rem solid #708013;
+    border-left: 14rem solid var(--envolope2);
+}
+.rightFlap {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 9rem solid transparent;
+  border-bottom: 9rem solid transparent;
+  border-right: 14rem solid var(--envolope2);
 }
 
 .bottomFlap {
@@ -63,30 +87,26 @@
   height: 0;
   border-left: 15rem solid transparent;
   border-right: 15rem solid transparent;
-  border-bottom: 10rem solid #801339;
+  border-bottom: 10rem solid var(--envolope);
   border-top: 5rem solid transparent;
-  z-index: 10;
+  z-index: 5;
   position: absolute;
 }
 
-.rightFlap {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: 9rem solid transparent;
-  border-bottom: 9rem solid transparent;
-  border-right: 14rem solid #708013;
-}
+
+
+
 
 
 
 @keyframes animation1 {
-  from {
+  0% {
     backdrop-filter: blur(0px);
   }
-  to {
+  50% {
     backdrop-filter: blur(10px);
+  }
+  100% {
+    backdrop-filter: blur(0px);
   }
 }
