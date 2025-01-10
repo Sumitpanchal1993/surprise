@@ -1,0 +1,33 @@
+.myAppBase{
+  min-height: 100vh;
+  min-height: 100vh;
+  background-color: #282c34;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNYZvUbziDRUMs0PMay9rM7Y_43dD5EvnyQ&s");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  /* animation: App-logo-spin infinite 20s ease-in-out; */
+}
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
