@@ -8,8 +8,7 @@ function App() {
   return (
     <>
       <div className="myAppBase">
-        <div>
-          
+        <div>          
           <Envolope />
         </div>
       </div>

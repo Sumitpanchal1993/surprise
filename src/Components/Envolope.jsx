@@ -11,16 +11,18 @@ function Envolope() {
     const handleOnClick = () => {
         let flap = document.getElementById("foldFlap")
         let heart = document.getElementById("heart")
+        let envolope = document.querySelector(".envolope")
         if (!isFlapOpen) {
             let key = prompt("Enter the Secert Key")
             if (key === secretKey) {
+                envolope.style.overflow = "visible"
                 flap.style.transform = "rotateX(-180deg)"
                 flap.style.top = "-50%"
                 setisFlapOpen(true)
                 heart.style.zIndex = "10"
             }
             else {
-                alert("You are not the Special One")
+                alert("You are not the Special One For whom the Envolope Belongs Sorry")
             }
         }
         else {
@@ -30,7 +32,6 @@ function Envolope() {
             setisFlapOpen(false)
         }
     }
-
 
     return (
         <>
@@ -52,7 +53,7 @@ function Envolope() {
             </button>
           </div>
                 <div className="envolope">
-                    <p style={{textAlign:"center", color: 'white'}}>tap on heart</p>
+                    <p style={{textAlign:"center", color: 'lightgrey'}}>tap on heart</p>
                     <div className='topFlap' id="foldFlap">
                         <div className='openBtn' onClick={handleOnClick}></div>
                     </div>

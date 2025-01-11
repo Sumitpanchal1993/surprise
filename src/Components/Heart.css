@@ -5,61 +5,65 @@
   position: relative;
   transition: all 1s ease-in-out;
   animation: heartBeat infinite 10s ease-in-out;
-  text-align:  center;
+  text-align: center;
   overflow-wrap: break-word;
 }
 
 .hrtTriangle {
   position: absolute;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   rotate: 45deg;
-  border-radius: 250% 0 0;
-  background: red;
+  border-radius: 100% 0 0;
+  background: #98002e;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px 0 darkred;
- 
+  box-shadow: 0 0 15px 0 black;
+  z-index: 1;
 }
 
 .hrtCircle {
   position: absolute;
-  width: 104px;
-  height: 104px;
-  border-radius: 100%;
-  /* top: 0; */
-  background: red;
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;  
+  background: hsl(342, 100%, 30%);
+ 
+ 
 }
 
 .hrtleft {
   position: absolute;
   bottom: 0;
-  left: -45px;
+  left: -43px;
+  box-shadow: -20px 4px 20px 0px #00000052;
 }
 
 .hrtRight {
   position: absolute;
-  bottom: 70px;
+  bottom: 68px;
   right: 0;
+  box-shadow: 6px -20px 20px 0px #00000052;
 }
 
-
-.message{    
-    z-index: 5;
-    color: white;
-    rotate: -45deg;
-    /* text-align: center; */
+.message {
+  color: white;
+  rotate: -45deg;
+  /* text-align: center; */
 }
 
 @keyframes heartBeat {
   0% {
     scale: 1;
+    background-color: #980000;
   }
   50% {
-    scale: 1.5;
+    scale: 1.4;
+    background-color: #cf0000 ;
   }
   100% {
     scale: 1;
+    background-color: #980000;
   }
 }

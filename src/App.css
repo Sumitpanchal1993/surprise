@@ -6,8 +6,10 @@
 .myAppBase{
   min-height: 100vh;
   min-height: 100vh;
-  background-image: url("./Media//Background1.jpg");
-  background-size: cover;
+  background-image: url("./Media//Background2.jpg");
+  /* background-image: url("https://img.freepik.com/premium-photo/couple-stands-hill-with-hearts-background_993259-6794.jpg?semt=ais_hybrid"); */
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
