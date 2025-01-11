@@ -51,8 +51,11 @@ function Envolope() {
               Hindi
             </button>
           </div>
+          <div style={{color:"#6e1010"}}>
+          Tap the Dot to open
+          </div>
                 <div className="envolope">
-                    <p style={{textAlign:"center", color: 'lightgrey'}}>tap on heart</p>
+                    <p style={{textAlign:"center", color: '#6e1010'}}>tap on heart</p>
                     <div className='topFlap' id="foldFlap">
                         <div className='openBtn' onClick={handleOnClick}></div>
                     </div>
