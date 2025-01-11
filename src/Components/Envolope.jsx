@@ -16,8 +16,7 @@ function Envolope() {
             let key = prompt("Enter the Secert Key")
             if (key === secretKey) {
                 envolope.style.overflow = "visible"
-                flap.style.transform = "rotateX(-180deg)"
-                flap.style.top = "-50%"
+                flap.style.transform = "rotateX(-180deg)"              
                 setisFlapOpen(true)
                 heart.style.zIndex = "10"
             }

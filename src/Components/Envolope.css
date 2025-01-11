@@ -12,7 +12,7 @@
   position: relative;
   width: 21rem;
   height: 14rem;
-  box-shadow:  0 0 10px 0 black, 0 0 15px 0 white;
+  box-shadow:  0 0 20px 3px white;
   background-color:  var(--envolope);
   overflow:hidden;
   transition: all 3s ease-in-out; 
@@ -21,7 +21,6 @@
   position: absolute;
   bottom: calc(50%, -50%);
   left: calc(50%, -50%);  
-  transition: all 5s ease-in-out;
 }
 .topFlap {
   position: absolute;
@@ -32,6 +31,7 @@
   border-radius: 0 0 150% 150%;
   box-shadow: 0 0 3px white;
   z-index: 1;
+  transform-origin: top center;
   transition: all 3s ease-in-out;
 }
 
